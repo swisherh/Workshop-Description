@@ -7,8 +7,22 @@
 \newcommand{\Z}{\mathbb Z}
 \newcommand{\R}{\mathbb R}
 
+% for version control info
+\newif\ifshowvc
+\showvctrue
+%\showvcfalse  % uncomment this line to turn off inclusion of vc info
+
+\ifshowvc
+\input{vc}
+\fi
+
 
 \begin{document}
+\ifshowvc
+\let\thefootnote\relax
+\footnotetext{Base revision~\GITAbrHash, \GITAuthorDate,
+\GITAuthorName.}
+\fi
 
 
 \begin{center}
